@@ -1,0 +1,33 @@
+[project]
+name = "mandimitra"
+version = "0.1.0"
+description = "WhatsApp-first order and stock intelligence for Indian FMCG distributors and retailers"
+readme = "README.md"
+authors = [
+    { name = "aru911-gethu", email = "aru91190@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.0",
+    "google-genai>=1.0.0",
+    "httpx>=0.27.0",
+    "litellm>=1.50.0",
+    "networkx>=3.2.1",
+    "pydantic>=2.8.0",
+    "pydantic-settings>=2.4.0",
+    "python-dotenv>=1.0.1",
+    "uvicorn>=0.30.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.12,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --no-header"

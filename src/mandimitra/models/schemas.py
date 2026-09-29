@@ -139,7 +139,7 @@ class ProactiveNudge(BaseModel):
 
 
 class RevenueRecoveryReport(BaseModel):
-    """Tracks revenue saved by MandiMate substitute engine on out-of-stock items."""
+    """Tracks revenue saved by MandiMitra substitute engine on out-of-stock items."""
     total_orders_analyzed: int
     total_oos_items_encountered: int
     substitutes_offered: int

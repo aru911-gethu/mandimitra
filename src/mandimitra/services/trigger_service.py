@@ -1,11 +1,11 @@
 """
-Proactive Reorder & Customer Nudge Service for MandiMate.
+Proactive Reorder & Customer Nudge Service for MandiMitra.
 Tracks retailer burn-rate and automatically triggers 1-tap WhatsApp reorder prompts.
 """
 
 from typing import List, Dict, Any
-from app.services.inventory_graph import FMCGInventoryGraph
-from app.models.schemas import ProactiveNudge
+from mandimitra.services.inventory_graph import FMCGInventoryGraph
+from mandimitra.models.schemas import ProactiveNudge
 
 
 class ProactiveTriggerService:
@@ -73,7 +73,7 @@ class ProactiveTriggerService:
         """
         lines = [
             f"👋 *Namaste {nudge.retailer_name} Sethji!*",
-            "_MandiMate Automated Stock Alert_\n",
+            "_MandiMitra Automated Stock Alert_\n",
             f"Aapka pichla order *{nudge.last_order_days_ago} din pehle* aaya tha.",
             f"Dukaan par ye fast-moving items khatam hone wale hain:\n"
         ]

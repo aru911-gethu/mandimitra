@@ -1,5 +1,5 @@
 """
-WhatsApp Message Composer for MandiMate.
+WhatsApp Message Composer for MandiMitra.
 Generates compliant Meta WhatsApp Business Cloud API JSON payloads:
 1. Interactive List Messages (with In-Stock & Substitute rows)
 2. Interactive Reply Buttons
@@ -7,7 +7,7 @@ Generates compliant Meta WhatsApp Business Cloud API JSON payloads:
 """
 
 from typing import Dict, Any
-from app.models.schemas import CartSummary
+from mandimitra.models.schemas import CartSummary
 
 
 class WhatsAppPayloadComposer:
@@ -63,7 +63,7 @@ class WhatsAppPayloadComposer:
                 "type": "list",
                 "header": {
                     "type": "text",
-                    "text": "🛒 MandiMate Wholesale Order"
+                    "text": "🛒 MandiMitra Wholesale Order"
                 },
                 "body": {
                     "text": (
@@ -141,7 +141,7 @@ class WhatsAppPayloadComposer:
                 "type": "button",
                 "header": {
                     "type": "text",
-                    "text": "⚡ MandiMate Restock Nudge"
+                    "text": "⚡ MandiMitra Restock Nudge"
                 },
                 "body": {
                     "text": (
@@ -186,7 +186,7 @@ class WhatsAppPayloadComposer:
         Formats a daily WhatsApp executive briefing for the warehouse owner / distributor.
         """
         lines = [
-            "🌅 *MandiMate Morning Executive Briefing*",
+            "🌅 *MandiMitra Morning Executive Briefing*",
             "_Har Jagah, Har Waqt, Mandi in Pocket!_\n",
             "💰 *1. Profit Margins by Family:*",
         ]

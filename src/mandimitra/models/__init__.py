@@ -1,4 +1,4 @@
-from app.models.schemas import (
+from mandimitra.models.schemas import (
     ExtractedRawItem,
     SubstituteItem,
     ResolvedItem,

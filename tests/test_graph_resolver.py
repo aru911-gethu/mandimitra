@@ -1,5 +1,5 @@
 """
-Test Script for MandiMate Sub-Agent 2 (Knowledge Graph & Substitute Resolver)
+Test Script for MandiMitra Sub-Agent 2 (Knowledge Graph & Substitute Resolver)
 Simulates realistic raw input coming from Agent 1 (Handwriting/Voice Parser).
 """
 
@@ -10,14 +10,14 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-from app.agents.graph_agent import GraphResolverAgent
-from app.models.schemas import ExtractedRawItem
-from app.services.whatsapp_composer import WhatsAppPayloadComposer
+from mandimitra.agents.graph_agent import GraphResolverAgent
+from mandimitra.models.schemas import ExtractedRawItem
+from mandimitra.services.whatsapp_composer import WhatsAppPayloadComposer
 
 
 def test_agent_2_pipeline():
     print("=================================================================")
-    print("🚀 Initializing MandiMate Sub-Agent 2 (Knowledge Graph Resolver)")
+    print("🚀 Initializing MandiMitra Sub-Agent 2 (Knowledge Graph Resolver)")
     print("=================================================================\n")
 
     agent = GraphResolverAgent()

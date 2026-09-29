@@ -13,15 +13,15 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-from app.agents.graph_agent import GraphResolverAgent
-from app.models.schemas import (
+from mandimitra.agents.graph_agent import GraphResolverAgent
+from mandimitra.models.schemas import (
     ExtractedRawItem,
     SubstitutionPolicy,
     SubstitutionStrategy
 )
 
 
-def run_programmable_routing_test():
+def test_programmable_routing():
     print("=========================================================================")
     print("⚙️  Testing Programmable Substitution Routing for Distributor Owner")
     print("=========================================================================\n")
@@ -100,5 +100,5 @@ def run_programmable_routing_test():
 
 
 if __name__ == "__main__":
-    run_programmable_routing_test()
+    test_programmable_routing()
 

@@ -1,7 +1,7 @@
 import json
 from typing import List, Dict, Any, Optional
-from app.services.inventory_graph import FMCGInventoryGraph
-from app.models.schemas import ExtractedRawItem, CartSummary, SubstitutionPolicy, SubstitutionStrategy
+from mandimitra.services.inventory_graph import FMCGInventoryGraph
+from mandimitra.models.schemas import ExtractedRawItem, CartSummary, SubstitutionPolicy, SubstitutionStrategy
 
 
 class GraphResolverAgent:
@@ -33,7 +33,7 @@ class GraphResolverAgent:
         WhatsApp chat preview before the interactive bottom-sheet / clicker.
         """
         lines = [
-            "🛒 *MandiMate Order Summary*",
+            "🛒 *MandiMitra Order Summary*",
             "_Har Jagah, Har Waqt, Mandi in Pocket!_\n",
             f"📦 *Total Items Requested:* {cart.total_requested_items}",
             f"✅ *In Stock:* {cart.in_stock_items_count}",

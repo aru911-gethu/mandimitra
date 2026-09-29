@@ -1,5 +1,5 @@
 """
-Analytics & Margin Intelligence Service for MandiMate.
+Analytics & Margin Intelligence Service for MandiMitra.
 Covers:
 1. Margin Intelligence per Product & Family (Brand / Category)
 2. Sales Velocity & FSN Classification (Fast, Slow, Non-moving)
@@ -8,8 +8,8 @@ Covers:
 """
 
 from typing import List, Dict, Literal
-from app.services.inventory_graph import FMCGInventoryGraph
-from app.models.schemas import (
+from mandimitra.services.inventory_graph import FMCGInventoryGraph
+from mandimitra.models.schemas import (
     ProductMarginData,
     FamilyMarginSummary,
     SKUPerformanceMetric,
@@ -205,7 +205,7 @@ class AnalyticsService:
                     self.substitutes_accepted += 1
 
     def get_revenue_recovery_report(self) -> RevenueRecoveryReport:
-        """Returns the summary report showing how much GMV MandiMate saved."""
+        """Returns the summary report showing how much GMV MandiMitra saved."""
         rate = (self.revenue_recovered / self.potential_revenue_lost * 100) if self.potential_revenue_lost > 0 else 0.0
         return RevenueRecoveryReport(
             total_orders_analyzed=self.total_orders,

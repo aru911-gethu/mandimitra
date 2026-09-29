@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import List, Optional, Tuple
 import networkx as nx
 
-from app.models.schemas import (
+from mandimitra.models.schemas import (
     ExtractedRawItem,
     SubstituteItem,
     ResolvedItem,

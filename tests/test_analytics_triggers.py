@@ -1,5 +1,5 @@
 """
-Comprehensive Test Script for MandiMate Intelligence Layers (Ideas 1 - 4):
+Comprehensive Test Script for MandiMitra Intelligence Layers (Ideas 1 - 4):
 1. Margin Intelligence per Product & Family
 2. Sales Velocity & FSN Analytics
 3. Distributor Reorder Point (ROP) Auto-Trigger Alerts
@@ -14,16 +14,16 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-from app.services.inventory_graph import FMCGInventoryGraph
-from app.services.analytics_service import AnalyticsService
-from app.services.trigger_service import ProactiveTriggerService
-from app.services.whatsapp_composer import WhatsAppPayloadComposer
-from app.models.schemas import ExtractedRawItem
+from mandimitra.services.inventory_graph import FMCGInventoryGraph
+from mandimitra.services.analytics_service import AnalyticsService
+from mandimitra.services.trigger_service import ProactiveTriggerService
+from mandimitra.services.whatsapp_composer import WhatsAppPayloadComposer
+from mandimitra.models.schemas import ExtractedRawItem
 
 
 def test_analytics_and_triggers():
     print("=========================================================================")
-    print("📊 MandiMate Autonomous Supply Chain & Margin Intelligence Engine")
+    print("📊 MandiMitra Autonomous Supply Chain & Margin Intelligence Engine")
     print("=========================================================================\n")
 
     # Initialize Graph & Services
